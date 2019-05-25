@@ -47,15 +47,8 @@ namespace LearnC.Content.Chapter1
 
 
             if(e.Item == "Пройти тест по главе 1")
-                await Navigation.PushModalAsync( new TabbedPage
-                {
-                    Children =
-                    {
-                        new Tests.Test1.Page1(),
-                        new Tests.Test1.Page2(),
-                        new Tests.Test1.Page3()
-                    }
-                });
+                await Navigation.PushModalAsync( new Tests.Test1.Test1(),
+                    false);
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;

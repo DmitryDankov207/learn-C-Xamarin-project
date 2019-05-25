@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LearnC.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="pageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="LightBlue" />
+            </Style>
 
+            <Style x:Key="testStyle" TargetType="TabbedPage">
+                <Setter Property="BackgroundColor" Value="LightBlue" />
+                <Setter Property="BarBackgroundColor" Value="DarkGreen" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

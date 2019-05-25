@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static LearnC.Helper;
 
 namespace LearnC.Tests.Test1
 {
@@ -19,20 +20,17 @@ namespace LearnC.Tests.Test1
 
         private void Switch_Toggled(object sender, ToggledEventArgs e)
         {
-            if (switch1.IsToggled == true)
-                switch2.IsToggled = switch3.IsToggled = false;
+            Toggle(switch1, switch2, switch3, e.Value);
         }
 
         private void Switch_Toggled_1(object sender, ToggledEventArgs e)
         {
-            if (switch2.IsToggled == true)
-                switch1.IsToggled = switch3.IsToggled = false;
+            Toggle(switch2, switch1, switch3, e.Value);
         }
 
         private void Switch_Toggled_2(object sender, ToggledEventArgs e)
         {
-            if (switch3.IsToggled == true)
-                switch2.IsToggled = switch1.IsToggled = false;
+            Toggle(switch3, switch2, switch1, e.Value);
         }
     }
 }

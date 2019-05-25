@@ -20,7 +20,8 @@ namespace LearnC
 
         private async void Chapter1_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Content.Chapter1.Chapter1());
+            await Navigation.PushAsync(new Content.Chapter1.Chapter1(),
+                false);
         }
 
         private void Chapter2_Clicked(object sender, EventArgs e)
