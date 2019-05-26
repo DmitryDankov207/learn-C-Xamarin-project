@@ -4,9 +4,4 @@
              xmlns:local="clr-namespace:LearnC.Tests.Test1"
              x:Class="LearnC.Tests.Test1.Test1"
             Style="{DynamicResource Key=testStyle}">
-    <TabbedPage.Children>
-        <local:Page1 />
-        <local:Page2 />
-        <local:Page3 />
-    </TabbedPage.Children>
 </TabbedPage>

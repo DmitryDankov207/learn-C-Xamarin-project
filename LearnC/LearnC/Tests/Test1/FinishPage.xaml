@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnC.Tests.Test1.FinishPage"
+             Title="finish">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="finishButton" Text="Закончить тест"
+                VerticalOptions="CenterAndExpand" Clicked="FinishButton_Clicked"
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
